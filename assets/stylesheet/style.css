@@ -1,0 +1,59 @@
+.input-group i{
+    padding: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.profile-container{
+    display: block;
+}
+
+.navbar{
+    color: black;
+    background-color: white;
+    overflow: hidden;
+}
+
+.profile-picture{
+    float: left;
+    width: 54px;
+    height: 54px;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.post-item{
+    padding: 10px;
+    min-height: 70px;
+}
+
+.post-text-container{
+    display: block;
+}
+
+.post-action{
+    padding:10px;
+
+}
+
+
+                                
+@media (max-width: 767.98px) {
+    /* .bottomnav{
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .main-header{
+        position: fixed;
+        top: 0;
+        background-color: white;
+        overflow: scroll;
+    } */
+  }

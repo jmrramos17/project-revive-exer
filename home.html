@@ -2,139 +2,327 @@
 
 <html>
     <head>
-        <title>Home / Twitter</title>
 
-        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home / Twitter</title>
+        
+
+        <link rel="stylesheet" href="assets/stylesheet/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+        
+
     </head>
 
     <body>
         
-        <div class = "twt-icon"><a href="home.html"><img src = "assets/icon/twt-logo.png"></a></div> 
-
-        <div class = "side-panel bottom-nav">
-            <div><a href="#" class = "float"><img src = "assets/icon/composetweet.png">Tweet</a></div>
-            <div><a href="#"><img src = "assets/icon/home.png">Home</a></div>
-            <div><a href="#"><img src = "assets/icon/search.png">Explore</a></div>
-            <div><a href="#"><img src = "assets/icon/notification.png">Notification</a> </div>
-            <div><a href="#"><img src = "assets/icon/messages.png">Messages</a></div>
-        </div>
-
-        <div class = "account-info"> 
-            <div><header>Account Info</header></div>
-            <div><a href="#"><img src = "resources/profile/profile.png"></a></div>
-            <div><h1>Jo Yuri</h1> </div>
-            <div><h2>@zoglass</h2></div>
-        </div>
-
-        
-
-        <div class = "side-left-panel">
-            <div><a href="#"><img src = "assets/icon/bookmark.png">Bookmark</a></div>
-            <div><a href="#"><img src = "assets/icon/list.png">List</a></div>
-            <div><a href="#"><img src = "assets/icon/profile.png">Profile</a></div>
-            <div class = "side panel drop-up">
-                <div><a href="#"><img src = "assets/icon/topics.png">Topics</a></div>
-                <div><a href="#"><img src = "assets/icon/moments.png">Moments</a></div>
-                <div><img src = "assets/icon/ads.png">Twitter Ads</a></div><a href="#">
-                <div><img src = "assets/icon/analytics.png">Analytics</a></div><a href="#">
-                <!-- separator -->
-                <div><img src = "assets/icon/settings.png">Settings</a></div><a href="#">
-                <div><a href="#"><img src = "assets/icon/help.png">Help</a> </div>
-                <!-- separator -->
-                <div><a href="#"><img src = "assets/icon/display.png">Display</a> </div>
-            </div>
-            
-        </div>
-
-        <div class = "home-page center-panel">
-            <div class = "sticky-header"><header> <img src = "resources/profile/profile.png"> HOME <img src = "assets/icon/content.png"></header></div>
-
-            <div class = "add-new-tweet">
-                <div><img src="resources/profile/profile.png"></a></div>
-                <div><input type=text placeholder="What's happening?"></div>
-                <div><button id="submit-tweet">Tweet</button></div>
-                <div><img src ="assets/icon/picture.png"></div>
-                <div><img src ="assets/icon/gif.png"></div>
-                <div><img src ="assets/icon/poll.png"></div>
-                <div><img src ="assets/icon/emoji.png"></div>
-                <div><img src ="assets/icon/schedule-tweet.png"></div>
-            </div>
-
-            <div class = "posts">
-                <div><img src = "resources/images/profile1.jpg"></div>
-                <div><a href = "#"><h1>Official Izone</h1></a><img src="assets/icon/verified.png"></div> 
-                <div><a href = "#"><h2>@official_izone</h2></a></div>
-                <div><h2>· Jun 16</h2></div>
-                <div class = "more" label = "more"><img src="assets/icon/downarr.png"></div>>
-                <div><span> IZ*ONE (#아이즈원)
-                    환상동화 (Secret Story of the Swan) MV
-                    <br>
-                    🖇<br>
-                    https://youtu.be/nnVjsos40qk
-                    <br>
-                    #IZONE  #アイズワン 
-                    #IZONE_OneiricDiary 
-                    #아이즈원의_환상동화_들어볼래</span></div>
-                <div><img src = "resources/images/post1.jpg"></div>
-                <div><img src = "assets/icon/reply.png"></div>
-                <div><img src = "assets/icon/like.png"></div>
-                <div><img src = "assets/icon/retweet.png"></div>
-                <div><img src = "assets/icon/share.png"></div>
-
-            </div>
-        </div>
-
-        <div class = "explore-panel side-right-panel">
-            <!-- <img src = "assets/icon/search.png"> -->
-            <div class="search-bar">
-                <i class="fa fa-search icon"></i>
-                <input type="text" placeholder="Search Twitter" id="search">
-            </div>
-
-            <div class="trending">
-                <div id="trend-label"><h1>Worldwide trends</h1></div>
-                <div id="trend-settings"><img src="assets/icon/settings.png"></div>
-                <div class="trend-list">
-                    <ol>
-                        <li>Tranding Item 1</li>
-                        <li>Tranding Item 2</li>
-                        <li>Tranding Item 3</li>
-                        <li>Tranding Item 4</li>
-                        <li>Tranding Item 5</li>
-                    </ol>
-                </div>
-                <div><span>Show more</span></div>
-            </div>
-
-            <div class="who-to-follow">
-                <div id="who-to-follow-label"><h1>Who to Follow?</h1></div>
-                <div class="suggested-accts">
-                    <div>
-                        <img src = "resources/profile/placeholder.jpg" width=120px height=120px>
-                        <h1>AccountName</h1> 
-                        <h2>@accountUsername</h2>
+        <div class="container">
+            <div class="row"> 
+                <aside class="col-lg-3 col-md-3 col-sm-2 col-12 flex-shrink-1">
+                    <div class=" navbar navbar-expand flex-md-column flex-row align-items-start">
+                        <ul class="bottomnav flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active"><i class="fas fa-home fa-fw"></i><span class="d-none d-md-inline">Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="fas fa-hashtag fa-fw"></i><span class="d-none d-md-inline">Explore</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-bell fa-fw"></i><span class="d-none d-md-inline">Notificaions</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="far fa-envelope fa-fw"></i><span class="d-none d-md-inline">Messages</span></a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div>
-                        <img src = "resources/profile/placeholder.jpg" width=120px height=120px>
-                        <h1>AccountName</h1> 
-                        <h2>@accountUsername</h2>
+                    <div class="navbar navbar-expand-lg">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav flex-column flex-row flow-md-column">
+                            <h1 class="nav-item" id="info-label">Account Information</h1>
+                            <div style="padding: 10px 0px 10px 0px;">
+                                <img src="resources/profile/profile.png" class="nav-item" width="72px" height="72px" style="float:left; border-radius: 100%;">
+                                <div id="acc-name-label" style="margin-left: 20px;">Jo Yuri</div>
+                                <div id="acc-uname-label" style="margin-left: 20px;">@zo_glass</div>
+                            </div>
+                            <a class="nav-item nav-link "href="#"><i class="far fa-bookmark"></i><span>Bookmarks</span></a>
+                            <a class="nav-item nav-link" href="#"><i class="far fa-list-alt"></i><span>Lists</span></a>
+                            <a class="nav-item nav-link" href="#"><i class="far fa-user"></i><span>Profile</span></a>
+                            <a class="nav-item nav-link d-none d-md-block" href="#"><i class="fas fa-ellipsis-h"></i><span>More</span></a>        
+                            <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-comment-dots"></i><span>Topics</span></a>
+                            <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-bolt"></i><span>Moments</span></a>
+                            <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-chart-line"></i><span>Twitter Ads</span></a>
+                            <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-chart-bar"></i><span>Analytics</span></a>
+                            <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-cog"></i><span>Settings and Privacy</span></a>
+                            <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-question-circle"></i><span>Help Center</span></a>
+                            <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-tv"></i><span>Display</span></a>    
+                            <a class="float" href="#"><i class="fas fa-feather-alt"></i><span>Tweet</span></a>
+                          </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="col-lg-6 col-md-6 col-sm-10 col-12">
+                    <div class="navbar main-header">
+                        <img src="resources/profile/profile.png" class = "d-md-none" width="36px" height="36px" style="border-radius:100%;" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        Home
+                        <i class="far fa-star navbar-brand" style="float:right;"></i>
                     </div>
                     
-                    <div>
-                        <img src = "resources/profile/placeholder.jpg" width=120px height=120px>
-                        <h1>AccountName</h1> 
-                        <h2>@accountUsername</h2>
+                    <form class="write-tweet form-inline">
+                        <img src="resources/profile/profile.png" class="" width="60px" height="60px" style="margin: 10px; border-radius: 100%; float:left;">
+                        <textarea class="form-control" placeholder="What's Happening?" style="min-width: 80%;"></textarea>
+                        
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="far fa-image"></i>
+                                <i class="fas fa-photo-video"></i>
+                                <i class="fas fa-poll-h"></i>
+                                <i class="far fa-smile"></i>
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <button class="btn">Tweet</button>
+                    </form>
+
+                    <div class="posts">
+                        <div class="post-item grid-container">
+                            <div class="profile-copntainer">
+                                <img src="resources/images/profile1.jpg" class="profile-picture">
+                            </div>
+                            
+                            <div class="post-text-container">
+                                <span class="post-name">official_IZONE</span>
+                                <span class="post-uname">@official_izone</span>
+                                <span class="date-posted"> · Jun 16</span>
+                                <i class="fas fa-chevron-down" style="float: right;"></i>
+                                <div>
+                                    <span>
+                                        IZ*ONE (#아이즈원) <br>
+                                        환상동화 (Secret Story of the Swan) MV <br>
+                                        <br>
+                                        🖇<br>
+                                        https://youtu.be/nnVjsos40qk<br>
+
+                                        #IZONE  #アイズワン <br>
+                                        #IZONE_OneiricDiary <br>
+                                        #아이즈원의_환상동화_들어볼래<br>
+                                    </span>    
+                                </div>
+                                <div>
+                                    <img src="resources/images/post1.jpg" class="img-fluid">
+                                </div>
+                                <div class="post-action d-flex">
+                                    <i class="far fa-comment flex-fill"></i>
+                                    <i class="fas fa-retweet flex-fill"></i>
+                                    <i class="far fa-heart flex-fill"></i>
+                                    <i class="far fa-share-square flex-fill"></i>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                        <div class="post-item grid-container">
+                            <div class="profile-copntainer">
+                                <img src="resources/images/profile1.jpg" class="profile-picture">
+                            </div>
+                            
+                            <div class="post-text-container">
+                                <span class="post-name">official_IZONE</span>
+                                <span class="post-uname">@official_izone</span>
+                                <span class="date-posted"> · Jun 16</span>
+                                <i class="fas fa-chevron-down" style="float: right;"></i>
+                                <div>
+                                    <span>
+                                        IZ*ONE (#아이즈원) <br>
+                                        환상동화 (Secret Story of the Swan) MV <br>
+                                        <br>
+                                        🖇<br>
+                                        https://youtu.be/nnVjsos40qk<br>
+
+                                        #IZONE  #アイズワン <br>
+                                        #IZONE_OneiricDiary <br>
+                                        #아이즈원의_환상동화_들어볼래<br>
+                                    </span>    
+                                </div>
+                                <div>
+                                    <img src="resources/images/post1.jpg" class="img-fluid">
+                                </div>
+                                <div class="post-action d-flex">
+                                    <i class="far fa-comment flex-fill"></i>
+                                    <i class="fas fa-retweet flex-fill"></i>
+                                    <i class="far fa-heart flex-fill"></i>
+                                    <i class="far fa-share-square flex-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-item grid-container">
+                            <div class="profile-copntainer">
+                                <img src="resources/images/profile1.jpg" class="profile-picture">
+                            </div>
+                            
+                            <div class="post-text-container">
+                                <span class="post-name">official_IZONE</span>
+                                <span class="post-uname">@official_izone</span>
+                                <span class="date-posted"> · Jun 16</span>
+                                <i class="fas fa-chevron-down" style="float: right;"></i>
+                                <div>
+                                    <span>
+                                        IZ*ONE (#아이즈원) <br>
+                                        환상동화 (Secret Story of the Swan) MV <br>
+                                        <br>
+                                        🖇<br>
+                                        https://youtu.be/nnVjsos40qk<br>
+
+                                        #IZONE  #アイズワン <br>
+                                        #IZONE_OneiricDiary <br>
+                                        #아이즈원의_환상동화_들어볼래<br>
+                                    </span>    
+                                </div>
+                                <div>
+                                    <img src="resources/images/post1.jpg" class="img-fluid">
+                                </div>
+                                <div class="post-action d-flex">
+                                    <i class="far fa-comment flex-fill"></i>
+                                    <i class="fas fa-retweet flex-fill"></i>
+                                    <i class="far fa-heart flex-fill"></i>
+                                    <i class="far fa-share-square flex-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="post-item grid-container">
+                            <div class="profile-copntainer">
+                                <img src="resources/images/profile1.jpg" class="profile-picture">
+                            </div>
+                            
+                            <div class="post-text-container">
+                                <span class="post-name">official_IZONE</span>
+                                <span class="post-uname">@official_izone</span>
+                                <span class="date-posted"> · Jun 16</span>
+                                <i class="fas fa-chevron-down" style="float: right;"></i>
+                                <div>
+                                    <span>
+                                        IZ*ONE (#아이즈원) <br>
+                                        환상동화 (Secret Story of the Swan) MV <br>
+                                        <br>
+                                        🖇<br>
+                                        https://youtu.be/nnVjsos40qk<br>
+
+                                        #IZONE  #アイズワン <br>
+                                        #IZONE_OneiricDiary <br>
+                                        #아이즈원의_환상동화_들어볼래<br>
+                                    </span>    
+                                </div>
+                                <div>
+                                    <img src="resources/images/post1.jpg" class="img-fluid">
+                                </div>
+                                <div class="post-action d-flex">
+                                    <i class="far fa-comment flex-fill"></i>
+                                    <i class="fas fa-retweet flex-fill"></i>
+                                    <i class="far fa-heart flex-fill"></i>
+                                    <i class="far fa-share-square flex-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-item grid-container">
+                            <div class="profile-copntainer">
+                                <img src="resources/images/profile1.jpg" class="profile-picture">
+                            </div>
+                            
+                            <div class="post-text-container">
+                                <span class="post-name">official_IZONE</span>
+                                <span class="post-uname">@official_izone</span>
+                                <span class="date-posted"> · Jun 16</span>
+                                <i class="fas fa-chevron-down" style="float: right;"></i>
+                                <div>
+                                    <span>
+                                        IZ*ONE (#아이즈원) <br>
+                                        환상동화 (Secret Story of the Swan) MV <br>
+                                        <br>
+                                        🖇<br>
+                                        https://youtu.be/nnVjsos40qk<br>
+
+                                        #IZONE  #アイズワン <br>
+                                        #IZONE_OneiricDiary <br>
+                                        #아이즈원의_환상동화_들어볼래<br>
+                                    </span>    
+                                </div>
+                                <div>
+                                    <img src="resources/images/post1.jpg" class="img-fluid">
+                                </div>
+                                <div class="post-action d-flex">
+                                    <i class="far fa-comment flex-fill"></i>
+                                    <i class="fas fa-retweet flex-fill"></i>
+                                    <i class="far fa-heart flex-fill"></i>
+                                    <i class="far fa-share-square flex-fill"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                                        
                 </div>
 
-                <div><span>Show more</span></div>
+                <div class="col-lg-3 col-md-3 col-sm-0 col-0 trending-panel">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Twitter">
+                    </div>
+                    <div class="d-flex flex-column trend-container">
+                        <div class="trend-container-label">
+                            <span class="trends-label">Worldwide Trends</span>
+                        </div>
+                        
+                        <div class="trend-item">
+                            <span>1. Trending</span>
+                            <span>#SSS5thWin</span>
+                        </div>
+                        <div class="trend-item">
+                            <span>2. Trending</span>
+                            <span>#SSS5thWin</span>
+                        </div>
+                        <div class="trend-item">
+                            <span>3. Trending</span>
+                            <span>#SSS5thWin</span>
+                        </div>
+                        <div class="trend-item">
+                            <span>4. Trending</span>
+                            <span>#SSS5thWin</span>
+                        </div>
+                        <div class="trend-item">
+                            <span>5. Trending</span>
+                            <span>#SSS5thWin</span>
+                        </div>
+                        <div>
+                            <span>Show More</span>
+                        </div>
+                    </div>
 
+                    <div class="d-flex flex-column follow-container">
+                        <div class="follow-container-label">
+                            <span class="trends-label">Who to follow</span>
+                        </div>
+                        
+                        <div class="follow-item">
+                            <img src="resources/images/profile1.jpg" class="profile-picture">
+                            <span>official_IZONE</span>
+                            <span>@official_izone</span>
+                        </div>
+                        <div class="follow-item">
+                            <img src="resources/images/profile1.jpg" class="profile-picture">
+                            <span>official_IZONE</span>
+                            <span>@official_izone</span>
+                        </div>
+                        <div>
+                            <span>Show More</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
-
-
 </html>

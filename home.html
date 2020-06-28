@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="assets/stylesheet/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-        
 
     </head>
 
@@ -18,76 +17,98 @@
         
         <div class="container">
             <div class="row"> 
-                <aside class="col-lg-3 col-md-3 col-sm-2 col-12 flex-shrink-1">
-                    <div class=" navbar navbar-expand flex-md-column flex-row align-items-start">
-                        <ul class="bottomnav flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                <div class="col-lg-3 col-md-2 col-sm-12 col-12 flex-shrink-1 left-sidebar position-sticky">
+                    <div class="navbar navbar-expand flex-md-column flex-row align-items-start">
+                        <ul class="bottomnav flex-md-column d-flex flex-row navbar-nav justify-content-between">
+                            <li class ="twitter-icon d-none d-md-block "><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link active"><i class="fas fa-home fa-fw"></i><span class="d-none d-md-inline">Home</span></a>
+                                <a href="#" class="nav-item nav-link active flex-fill"><i class="fas fa-home fa-fw"></i><span class="d-none d-md-none d-lg-inline">Home</span></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link"><i class="fas fa-hashtag fa-fw"></i><span class="d-none d-md-inline">Explore</span></a>
+                                <a href="#" class="nav-link flex-fill"><i class="fas fa-hashtag fa-fw"></i><span class="d-none d-md-none d-lg-inline">Explore</span></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link"><i class="far fa-bell fa-fw"></i><span class="d-none d-md-inline">Notificaions</span></a>
+                                <a href="#" class="nav-link flex-fill"><i class="far fa-bell fa-fw"></i><span class="d-none d-md-none d-lg-inline">Notificaions</span></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link"><i class="far fa-envelope fa-fw"></i><span class="d-none d-md-inline">Messages</span></a>
+                                <a href="#" class="nav-link flex-fill"><i class="far fa-envelope fa-fw"></i><span class="d-none d-md-none d-lg-inline">Messages</span></a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="navbar navbar-expand-lg">
+                    <div class="navbar navbar-expand-md">
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                           <div class="navbar-nav flex-column flex-row flow-md-column">
-                            <h1 class="nav-item" id="info-label">Account Information</h1>
-                            <div style="padding: 10px 0px 10px 0px;">
-                                <img src="resources/profile/profile.png" class="nav-item" width="72px" height="72px" style="float:left; border-radius: 100%;">
-                                <div id="acc-name-label" style="margin-left: 20px;">Jo Yuri</div>
-                                <div id="acc-uname-label" style="margin-left: 20px;">@zo_glass</div>
+                            <div class="account-information">
+                                <h1 class="nav-item d-md-none " id="info-label">Account Information</h1>
+                                <img src="resources/profile/profile.png" class="nav-item account-profile">
+                                <div class="acc-info-text">
+                                    <div id="acc-name-label" class="post-name d-md-none d-lg-block">Jo Yuri</div>
+                                    <div id="acc-uname-label" class="post-uname d-md-none d-lg-block">@zo_glass</div>
+                                </div>
+                                <i class="fas fa-chevron-down d-none d-md-block" style="float:right; font-size: 12px"></i>
+                                
                             </div>
-                            <a class="nav-item nav-link "href="#"><i class="far fa-bookmark"></i><span>Bookmarks</span></a>
-                            <a class="nav-item nav-link" href="#"><i class="far fa-list-alt"></i><span>Lists</span></a>
-                            <a class="nav-item nav-link" href="#"><i class="far fa-user"></i><span>Profile</span></a>
-                            <a class="nav-item nav-link d-none d-md-block" href="#"><i class="fas fa-ellipsis-h"></i><span>More</span></a>        
-                            <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-comment-dots"></i><span>Topics</span></a>
-                            <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-bolt"></i><span>Moments</span></a>
-                            <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-chart-line"></i><span>Twitter Ads</span></a>
-                            <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-chart-bar"></i><span>Analytics</span></a>
-                            <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-cog"></i><span>Settings and Privacy</span></a>
-                            <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-question-circle"></i><span>Help Center</span></a>
-                            <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-tv"></i><span>Display</span></a>    
-                            <a class="float" href="#"><i class="fas fa-feather-alt"></i><span>Tweet</span></a>
+                            <a class="nav-item nav-link "href="#"><i class="far fa-bookmark"></i><span class="d-md-none d-lg-inline">Bookmarks</span></a>
+                            <a class="nav-item nav-link" href="#"><i class="far fa-list-alt"></i><span class="d-md-none d-lg-inline">Lists</span></a>
+                            <a class="nav-item nav-link" href="#"><i class="far fa-user"></i><span class="d-md-none d-lg-inline">Profile</span></a>
+                            <div class="dropup">
+                                <a class="nav-item nav-link dropbtn d-none d-md-block" href="#"><i class="fas fa-ellipsis-h"></i><span class="d-md-none d-lg-inline">More</span></a>
+                                <div class="dropup-content">
+                                    <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-comment-dots"></i><span>Topics</span></a>
+                                    <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-bolt"></i><span>Moments</span></a>
+                                    <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-chart-line"></i><span>Twitter Ads</span></a>
+                                    <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-chart-bar"></i><span>Analytics</span></a>
+                                    <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-cog"></i><span>Settings and Privacy</span></a>
+                                    <a class="nav-item nav-link dropdown-item" href="#"><i class="far fa-question-circle"></i><span>Help Center</span></a>
+                                    <a class="nav-item nav-link dropdown-item" href="#"><i class="fas fa-tv"></i><span>Display</span></a>    
+                                </div>        
+                            </div>
+
                           </div>
                         </div>
                     </div>
-                </aside>
 
-                <div class="col-lg-6 col-md-6 col-sm-10 col-12">
-                    <div class="navbar main-header">
+                    <a href="#">
+                        <div class="float">
+                            <i class="fas fa-feather-alt d-lg-none"></i><span class="tweet-text d-none d-lg-block">Tweet</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-10 col-sm-12 col-12 center-panel">
+                    <div class="navbar main-header sticky-top">
                         <img src="resources/profile/profile.png" class = "d-md-none" width="36px" height="36px" style="border-radius:100%;" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        Home
+                        <span class="page-label">Home</span>
                         <i class="far fa-star navbar-brand" style="float:right;"></i>
                     </div>
                     
-                    <form class="write-tweet form-inline">
-                        <img src="resources/profile/profile.png" class="" width="60px" height="60px" style="margin: 10px; border-radius: 100%; float:left;">
-                        <textarea class="form-control" placeholder="What's Happening?" style="min-width: 80%;"></textarea>
-                        
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <i class="far fa-image"></i>
-                                <i class="fas fa-photo-video"></i>
-                                <i class="fas fa-poll-h"></i>
-                                <i class="far fa-smile"></i>
-                                <i class="far fa-calendar-alt"></i>
+                    <form class="write-tweet form-inline d-none d-md-block">
+                        <div class="grid-container">
+                            <div class="profile-container">
+                                <img src="resources/profile/profile.png" class="" width="60px" height="60px" style="margin: 10px; border-radius: 100%; float:left;">
+                            </div>
+                            <div class="tweet-input-container">
+                                <textarea class="form-control" placeholder="What's Happening?" style="width: 100%;"></textarea>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <i class="far fa-image"></i>
+                                        <i class="fas fa-photo-video"></i>
+                                        <i class="fas fa-poll-h"></i>
+                                        <i class="far fa-smile"></i>
+                                        <i class="far fa-calendar-alt"></i>
+                                        <div class="pull-right">
+                                            <button class="submit-tweet-btn pull-right">Tweet</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button class="btn">Tweet</button>
                     </form>
 
                     <div class="posts">
                         <div class="post-item grid-container">
-                            <div class="profile-copntainer">
+                            <div class="profile-container">
                                 <img src="resources/images/profile1.jpg" class="profile-picture">
                             </div>
                             
@@ -264,38 +285,38 @@
                                         
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-0 col-0 trending-panel">
+                <div class="col-lg-3  trending-panel d-none d-lg-block position-sticky">
                     <div class="search-bar">
                         <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Search Twitter">
+                        <input type="text" placeholder="Search Twitter" class="input-field">
                     </div>
                     <div class="d-flex flex-column trend-container">
                         <div class="trend-container-label">
                             <span class="trends-label">Worldwide Trends</span>
                         </div>
                         
-                        <div class="trend-item">
-                            <span>1. Trending</span>
-                            <span>#SSS5thWin</span>
+                        <div class="trend-item-container">
+                            <span class="trend-order">1. Trending</span><br>
+                            <span class="trend-item">#SSS6thWin</span>
                         </div>
-                        <div class="trend-item">
-                            <span>2. Trending</span>
-                            <span>#SSS5thWin</span>
+                        <div class="trend-item-container">
+                            <span class="trend-order">2. Trending</span><br>
+                            <span class="trend-item">#SSS6thWin</span>
                         </div>
-                        <div class="trend-item">
-                            <span>3. Trending</span>
-                            <span>#SSS5thWin</span>
+                        <div class="trend-item-container">
+                            <span class="trend-order">3. Trending</span><br>
+                            <span class="trend-item">#SSS6thWin</span>
                         </div>
-                        <div class="trend-item">
-                            <span>4. Trending</span>
-                            <span>#SSS5thWin</span>
+                        <div class="trend-item-container">
+                            <span class="trend-order">4. Trending</span><br>
+                            <span class="trend-item">#SSS6thWin</span>
                         </div>
-                        <div class="trend-item">
-                            <span>5. Trending</span>
-                            <span>#SSS5thWin</span>
+                        <div class="trend-item-container">
+                            <span class="trend-order">5. Trending</span><br>
+                            <span class="trend-item">#SSS6thWin</span>
                         </div>
                         <div>
-                            <span>Show More</span>
+                            <span class="show-more-label">Show More</span>
                         </div>
                     </div>
 
@@ -306,16 +327,22 @@
                         
                         <div class="follow-item">
                             <img src="resources/images/profile1.jpg" class="profile-picture">
-                            <span>official_IZONE</span>
-                            <span>@official_izone</span>
+                            <div>
+                                <span class="post-name">official_IZONE</span>
+                                <span class="post-uname">@official_izone</span>
+                            </div>
+                            
                         </div>
                         <div class="follow-item">
                             <img src="resources/images/profile1.jpg" class="profile-picture">
-                            <span>official_IZONE</span>
-                            <span>@official_izone</span>
+                            <div>
+                                <span class="post-name">official_IZONE</span>
+                                <span class="post-uname">@official_izone</span>
+                            </div>
+                            
                         </div>
                         <div>
-                            <span>Show More</span>
+                            <span class="show-more-label">Show More</span>
                         </div>
                     </div>
                 </div>
